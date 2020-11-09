@@ -1,11 +1,11 @@
-# sudo: false
-# language: node_js
-# node_js:
-#   - node
+sudo: false
+language: node_js
+node_js:
+  - node
 
 
-# install:
-#   - npm ci
+install:
+  - npm ci
 
 addons:
   sonarcloud:
@@ -17,12 +17,12 @@ script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - sonar-scanner
   
-# script:
-#   - npm run test
+script:
+  - npm run test
 
 
-# nofications:
-#   email: false
+nofications:
+  email: false
 
 
   
