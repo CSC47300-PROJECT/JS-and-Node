@@ -1,13 +1,15 @@
+sudo: false
 language: node_js
 node_js:
-  - 7
+  - node
 
-addons:
-  sonarcloud:
-    organization: "csc47300-project"
-    token:
-      secure: "23d2ca28d9fd328f820b48969022ce32c9b03a5a" # encrypted value of your token
 
+install:
+  - npm ci
+  
 script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - sonar-scanner
+  - npm run lint
+  - npm run test:"coveralls"
+
+nofications:
+  email: false
