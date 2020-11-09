@@ -3,6 +3,11 @@ language: node_js
 node_js:
   - node
 
+addons:
+  sonarcloud:
+    organization: "csc47300-project"
+    token:
+      secure: "ec37f108748a8ab2bb7d6efdff765e61d5fe24bb" # encrypted value of your token
 
 install:
   - npm ci
