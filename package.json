@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
-    "test:staged": "jest --findRelatedTests"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
