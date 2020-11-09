@@ -7,11 +7,13 @@ node_js:
 install:
   - npm ci
 
+dist: xenial
+
 addons:
   sonarcloud:
     organization: "csc47300-project"
     token:
-      secure: "ef89423cc704ed1d452dec8fe4614af387e09def" # encrypted value of your token
+      secure: "4970560d289b952c210550165ef04ca2c280a24a" # encrypted value of your token
 
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
