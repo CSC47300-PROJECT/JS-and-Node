@@ -7,7 +7,7 @@
     "test":"jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:coverallls": "jest --coverage && coveralls < coverage/lcov.info",
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
     "test:staged":"jest --findRelatedTests"
   },
   "repository": {
