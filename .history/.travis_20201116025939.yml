@@ -1,0 +1,19 @@
+sudo: false
+language: node_js
+node_js:
+- node
+install:
+- npm ci
+dist: xenial
+addons:
+  sonarcloud:
+    organization: csc47300-project
+    token:
+      secure: "**************************"
+script:
+- npm run test
+nofications:
+  email: false
+env:
+  global:
+    secure: sercet
